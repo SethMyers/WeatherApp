@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sethmyers1.weatherapp.MainActivity"
+    android:background="#FF0099CC">
+
+    <EditText
+        android:id="@+id/search_city"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter City (eg. Halifax)"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/change_city"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:layout_below="@+id/city_name"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/temperature"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/currDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="187dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/currWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="217dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:layout_alignLeft="@+id/temperature"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/clouds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/humidity"
+        android:layout_alignRight="@+id/temperature"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/temperature"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"/>
+
+    <Button
+        android:id="@+id/change_city"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_city"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorWhite"
+        android:text="GET WEATHER"
+        android:textColor="@color/colorBlue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
